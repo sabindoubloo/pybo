@@ -1,13 +1,13 @@
 from django.core.paginator import Paginator
 from django.db.models import Q, Count
 from django.shortcuts import render, get_object_or_404
-import logging
-longger = logging.getLogger('pybo')
 from ..models import Question
+import logging
+logger = logging.getLogger('pybo')
 
 
 def index(request):
-    longger.info("INFO 레벨로 출럭")
+    logger.info("INFO 레벨로 출럭")
     """
     pybo 목록 출력
     """
