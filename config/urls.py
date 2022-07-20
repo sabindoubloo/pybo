@@ -1,6 +1,6 @@
 from django.contrib import admin
 from django.urls import path, include
-from pybo import views
+
 from pybo.views import base_views
 
 urlpatterns = [
@@ -9,4 +9,5 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('', base_views.index, name='index'),
 ]
+
 handler404 = 'common.views.page_not_found'
