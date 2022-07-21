@@ -1,7 +1,7 @@
 {% extends 'base.html' %}
 {% block content %}
 <div class="container">
-    <h5 class="my-3 border-bottom pb-2">질문등록</h5>
+    <h5 class="my-3 border-bottom pb-2">상품등록</h5>
     <form method="post">
         {% csrf_token %}
         <!--오류 표시 Start -->
@@ -31,12 +31,12 @@
             <label for="content">제조사</label>
             <form action="">
             <select name="lap">
-                <option value="삼성전자">삼성전자></option>
-                <option value="LG전자">LG전자></option>
+                <option value="삼성전자">삼성전자</option>
+                <option value="LG전자">LG전자</option>
                 <option value="애플">애플</option>
-                <option value="DELL">DELL></option>
-                <option value="LENOVO">LENOVO></option>
-                <option value="HP">HP></option>
+                <option value="DELL">DELL</option>
+                <option value="LENOVO">LENOVO</option>
+                <option value="HP">HP</option>
                 value="{{ form.content.value |default_if_none:'' }}"></form></select></div>
         <button type="submit" class="btn btn-primary">저장하기</button>
     </form>
