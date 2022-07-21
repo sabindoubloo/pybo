@@ -6,10 +6,11 @@ from pybo.models import Question, Answer, Comment
 class QuestionForm(forms.ModelForm):
     class Meta:
         model = Question
-        fields = ['subject', 'content']
+        fields = ['subject', 'number', 'made']
         labels = {
             'subject': '제품명',
-            'content': '가격',
+            'number': '가격',
+            'made': '제조사',
 
         }
 
