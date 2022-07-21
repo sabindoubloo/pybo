@@ -26,7 +26,10 @@
         </div>
          <div class="form-group">
             <label for="content">제조일자</label>
-              <input type="month" name="month" id="month" value="{{ form.content.value |default_if_none:'' }}">
+             <input type="month" name="month" id="month" value="{{ form.content.value |default_if_none:'' }}"></div>
+        <div class="form-group">
+            <label for="content">제조사</label>
+            <input type="month" name="month" id="month" value="{{ form.content.value |default_if_none:'' }}"></div>
         <button type="submit" class="btn btn-primary">저장하기</button>
     </form>
 </div>
