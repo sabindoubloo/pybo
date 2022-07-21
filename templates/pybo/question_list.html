@@ -39,9 +39,6 @@
                 </span>
                 {% endif %}
             </td>
-            <td>
-                {{ question.price}}
-            </td>
             <td class="text-left">
                 <a href="{% url 'pybo:detail' question.id %}">{{ question.subject }}</a>
                 {% if question.answer_set.count > 0 %}
