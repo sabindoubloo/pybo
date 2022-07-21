@@ -22,21 +22,7 @@
         </div>
         <div class="form-group">
             <label for="number">가격</label>
-            <input type="number" name="number" id="number" value="{{ form.content.value |default_if_none:'' }}">
-        </div>
-         <div class="form-group">
-            <label for="month">제조일자</label>
-             <input type="month" name="month" id="month" value="{{ form.content.value |default_if_none:'' }}"></div>
-        <div class="form-group">
-            <label for="made">제조사</label>
-            <select name="lap" id="made"></select>
-                <option value="삼성전자">삼성전자</option>
-                <option value="LG전자">LG전자</option>
-                <option value="애플">애플</option>
-                <option value="DELL">DELL</option>
-                <option value="LENOVO">LENOVO</option>
-                <option value="HP">HP</option>
-
+            <input type="number" name="number" id="number" value="{{ form.content.value |default_if_none:'' }}"
         <button type="submit" class="btn btn-primary">저장하기</button>
     </form>
 </div>
