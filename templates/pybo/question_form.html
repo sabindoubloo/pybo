@@ -29,15 +29,16 @@
              <input type="month" name="month" id="month" value="{{ form.content.value |default_if_none:'' }}"></div>
         <div class="form-group">
             <label for="content">제조사</label>
-            <form action="">
-            <select name="lap">
+            <form action=""></form>
+            <select name="lap"></select>
                 <option value="삼성전자">삼성전자</option>
                 <option value="LG전자">LG전자</option>
                 <option value="애플">애플</option>
                 <option value="DELL">DELL</option>
                 <option value="LENOVO">LENOVO</option>
                 <option value="HP">HP</option>
-               </form></select></div>
+                  <input type="content" name="content" id="content"
+                value="{{ form.content.value |default_if_none:'' }}"></div>
         <button type="submit" class="btn btn-primary">저장하기</button>
     </form>
 </div>
