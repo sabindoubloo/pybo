@@ -39,13 +39,13 @@
                 </span>
                 {% endif %}
             </td>
-            <td>{{ question.integer }}</td>
             <td class="text-left">
                 <a href="{% url 'pybo:detail' question.id %}">{{ question.subject }}</a>
                 {% if question.answer_set.count > 0 %}
                 <span class="text-danger small ml-2">{{ question.answer_set.count }}</span>
                 {% endif %}
             </td>
+            <td>{{ question.integer }}</td>
             <td>{{ question.author.username }}</td>  <!-- 글쓴이 추가 -->
             <td>{{ question.create_date }}</td>
         </tr>
