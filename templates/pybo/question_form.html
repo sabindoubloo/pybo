@@ -1,7 +1,7 @@
 {% extends 'base.html' %}
 {% block content %}
 <div class="container">
-    <h5 class="my-3 border-bottom pb-2">상품등록</h5>
+    <h5 class="my-3 border-bottom pb-2">질문등록</h5>
     <form method="post">
         {% csrf_token %}
         <!--오류 표시 Start -->
@@ -22,7 +22,7 @@
         </div>
         <div class="form-group">
             <label for="number">가격</label>
-            <input type="number" name="number" id="number" value="{{ form.content.value |default_if_none:'' }}"
+            <input type="number" name="number" id="number" value="{{ form.content.value |default_if_none:'' }}">
         <button type="submit" class="btn btn-primary">저장하기</button>
     </form>
 </div>
