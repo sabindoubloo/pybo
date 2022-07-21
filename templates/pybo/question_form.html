@@ -16,13 +16,17 @@
             </div>
         {% endif %}
         <!--오류표시 End-->
-        <div class="form-group">
+         <div class="form-group">
             <label for="subject">제품명</label>
             <input type="text" name="subject" id="subject" value="{{ form.content.value |default_if_none:'' }}">
         </div>
         <div class="form-group">
-            <label for="number">가격</label>
-            <input type="number" name="number" id="number" value="{{ form.content.value |default_if_none:'' }}">
+            <label for="content">가격</label>
+            <input type="text" name="number" id="content" value="{{ form.content.value |default_if_none:'' }}">
+        </div>
+        <div class="form-group">
+            <label for="content">제조사</label>
+             <textarea class ="form-control" name="content" id="content" value=">{{ form.content.value |default_if_none:'' }}</textarea></div>
         <button type="submit" class="btn btn-primary">저장하기</button>
     </form>
 </div>
