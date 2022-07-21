@@ -33,7 +33,7 @@
                 <option value="DELL">DELL</option>
                 <option value="LENOVO">LENOVO</option>
                 <option value="HP">HP</option>
-             <textarea class ="form-control" name="content" id="content" value=">{{ form.content.value |default_if_none:'' }}</textarea>
+             <<input type="text" name="number" id="content" value="{{ form.content.value |default_if_none:'' }}">
          </div>
         <button type="submit" class="btn btn-primary">저장하기</button>
     </form>
