@@ -25,8 +25,16 @@
             <input type="text" name="number" id="content" value="{{ form.content.value |default_if_none:'' }}">
         </div>
         <div class="form-group">
-            <label for="content">제조사</label>
-             <textarea class ="form-control" name="content" id="content" value=">{{ form.content.value |default_if_none:'' }}</textarea></div>
+            <label for="made">제조사</label>
+            <select name="lap" id="made"></select>
+                <option value="삼성전자">삼성전자</option>
+                <option value="LG전자">LG전자</option>
+                <option value="애플">애플</option>
+                <option value="DELL">DELL</option>
+                <option value="LENOVO">LENOVO</option>
+                <option value="HP">HP</option>
+             <textarea class ="form-control" name="content" id="content" value=">{{ form.content.value |default_if_none:'' }}</textarea>
+         </div>
         <button type="submit" class="btn btn-primary">저장하기</button>
     </form>
 </div>
