@@ -26,10 +26,7 @@
         </div>
          <div class="form-group">
             <label for="content">제조일자</label>
-             <textarea class ="form-control" name="content" id="integer" value="{{ form.content.value |default_if_none:'' }}</textarea></div>
-        <div class="form-group">
-            <label for="content">제조사</label>
-             <textarea class ="form-control" name="content" id="content" value=">{{ form.content.value |default_if_none:'' }}</textarea></div>
+             <textarea class ="form-control" name="content" id="content=" rows="5">{{ form.content.value |default_if_none:'' }}</textarea></div>
         <button type="submit" class="btn btn-primary">저장하기</button>
     </form>
 </div>
