@@ -21,12 +21,15 @@
             <input type="text" name="subject" id="subject" value="{{ form.content.value |default_if_none:'' }}">
         </div>
         <div class="form-group">
-            <label for="subject">가격</label>
-            <input type="text" name="content" id="integer" value="{{ form.content.value |default_if_none:'' }}">
+            <label for="content">가격</label>
+            <input type="text" name="content" id="integer" rows="5"{{ form.content.value |default_if_none:'' }}">
         </div>
          <div class="form-group">
-            <label for="content">내용</label>
-            <textarea class ="form-control" name="content" id="content=" rows="10">{{ form.content.value |default_if_none:'' }}</textarea>
+            <label for="content">제조일자</label>
+             <textarea class ="form-control" name="content" id="content=" rows="5">{{ form.content.value |default_if_none:'' }}</textarea></div>
+        <div class="form-group">
+            <label for="content">제조일자</label>
+             <textarea class ="form-control" name="content" id="content=" rows="5">{{ form.content.value |default_if_none:'' }}</textarea>
         <button type="submit" class="btn btn-primary">저장하기</button>
     </form>
 </div>
