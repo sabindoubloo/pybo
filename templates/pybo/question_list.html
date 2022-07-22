@@ -25,7 +25,6 @@
             <th>번호</th>
             <th>추천</th>
             <th style="width:50%">제품명</th>
-            <th>가격</th>
             <th>제조사</th>
             <th>글쓴이</th>
             <th>작성일시</th>
@@ -52,7 +51,6 @@
                 <span class="text-danger small ml-2">{{ question.answer_set.count }}</span>
                 {% endif %}
             </td>
-            <td> {{ object.price }}</td>
             <td>{{ object.made }}</td>
             <td>{{ question.author.username }}</td>  <!-- 글쓴이 추가 -->
             <td>{{ question.create_date }}</td>
